@@ -1,0 +1,18 @@
+LDI R1 .x
+0
+RLD R1
+LDI R2
+1
+LDI R3
+0
+ADD R2 .Loop
+BRC COUT
+[x]
+PST $7
+ADR R2
+RST R3
+RLD R2
+PST $7
+RLD R3
+BRC JMP
+[Loop]
